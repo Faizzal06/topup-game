@@ -1,0 +1,41 @@
+{
+    "whatsapp": "6281999622231",
+    "games": [
+        {
+            "name": "Mobile Legends",
+            "icon": "🛡️",
+            "banner": "assets/mobile-legends.png",
+            "products": [
+                { "diamond": 12, "price": 5000 },
+                { "diamond": 28, "price": 10000 },
+                { "diamond": 56, "price": 17000 },
+                { "diamond": 74, "price": 21000 }
+            ]
+        },
+        {
+            "name": "Free Fire",
+            "icon": "🔥",
+            "banner": "assets/freefire1.png",
+            "products": [
+                { "diamond": 5, "price": 2000 },
+                { "diamond": 10, "price": 3000 },
+                { "diamond": 20, "price": 5000 },
+                { "diamond": 50, "price": 7000 },
+                { "diamond": 70, "price": 10500 },
+                { "diamond": 100, "price": 15000 },
+                { "diamond": 140, "price": 20000 }
+            ]
+        },
+        {
+            "name": "PUBG Mobile",
+            "icon": "🪂",
+            "banner": "https://placehold.co/600x400",
+            "products": [
+                { "diamond": 0, "price": 12000 },
+                { "diamond": 0, "price": 58000 },
+                { "diamond": 0, "price": 114000 },
+                { "diamond": 0, "price": 280000 }
+            ]
+        }
+    ]
+}

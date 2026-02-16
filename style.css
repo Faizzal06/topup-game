@@ -1,0 +1,266 @@
+/* ========== RESET & GLOBAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B0F17;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: #e0e7ff;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* ========== HEADER ========== */
+.header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    background: linear-gradient(145deg, #ffffff, #a5b4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.3rem;
+}
+
+.header p {
+    color: #8b9bb5;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #1e2a3a;
+    display: inline-block;
+    padding-bottom: 0.6rem;
+}
+
+/* ========== SECTION GAME ========== */
+.game-section {
+    margin-bottom: 3.5rem;
+}
+
+.game-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #d1e0ff;
+    border-left: 6px solid #2563eb;
+    padding-left: 1rem;
+}
+
+.game-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 0 6px #3b82f6);
+}
+
+/* ========== GRID PRODUK ========== */
+.diamond-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.8rem;
+}
+
+/* ========== CARD PRODUK ========== */
+.card {
+    background: #131d2b;
+    border-radius: 28px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 20px 30px -10px rgba(0, 20, 60, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.03);
+    border: 1px solid #253141;
+    backdrop-filter: blur(2px);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #60a5fa, #2563eb);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 25px 35px -12px #1e3a8a80;
+    transform: translateY(-5px);
+    background: #152233;
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.diamond-icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 0 8px #3b82f6);
+    margin-bottom: 0.8rem;
+    opacity: 0.9;
+}
+
+.jumlah-diamond {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.jumlah-diamond small {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #94a3b8;
+    margin-left: 0.2rem;
+}
+
+.harga {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.8rem 0 1.2rem 0;
+    color: #bfd9ff;
+    background: rgba(37, 99, 235, 0.15);
+    padding: 0.3rem 1.2rem;
+    border-radius: 40px;
+    border: 1px solid #2d4460;
+    backdrop-filter: blur(2px);
+}
+
+.harga span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9ab0d1;
+    margin-right: 0.1rem;
+}
+
+.beli-label {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 36px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: background 0.15s, box-shadow 0.15s;
+    box-shadow: 0 6px 12px -6px #0f2b5e;
+    margin-top: 0.5rem;
+}
+
+.card:hover .beli-label {
+    background: #3b82f6;
+    box-shadow: 0 8px 16px -6px #1e3a8a;
+}
+
+.beli-label i {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* ========== FOOTER ========== */
+.footer-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+    color: #6885a7;
+    font-size: 0.95rem;
+    border-top: 1px dashed #253141;
+    padding-top: 2rem;
+}
+
+.wa-badge {
+    background: #1f2b3a;
+    padding: 0.4rem 1.2rem;
+    border-radius: 60px;
+    color: #b1cbff;
+    border: 1px solid #2f4057;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.wa-badge i {
+    font-size: 1.2rem;
+    color: #25D366;
+}
+
+.small-note {
+    color: #3d5670;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .diamond-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .jumlah-diamond {
+        font-size: 1.6rem;
+    }
+
+    .jumlah-diamond small {
+        font-size: 0.8rem;
+    }
+
+    .harga {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.8rem;
+    }
+
+    .beli-label {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .diamond-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Tambahan gaya untuk banner */
+.game-banner {
+    width: 100%;
+    border-radius: 20px;
+    margin: 1rem 0 1.5rem 0;
+    object-fit: cover;
+    max-height: 150px;
+    background-color: #1e2a3a; /* fallback jika gambar gagal dimuat */
+    border: 1px solid #2f4057;
+}
