@@ -21,8 +21,8 @@
                 { "diamond": 10, "price": 3000 },
                 { "diamond": 20, "price": 5000 },
                 { "diamond": 50, "price": 7000 },
-                { "diamond": 70, "price": 10500 },
-                { "diamond": 100, "price": 15000 },
+                { "diamond": 70, "price": 11000 },
+                { "diamond": 100, "price": 15500 },
                 { "diamond": 140, "price": 20000 }
             ]
         },
